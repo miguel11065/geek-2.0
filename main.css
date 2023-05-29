@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar,
+#rodape {
+    background-color: #05a3ad;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #05a3ad;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover,
+#rodape {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #70e9f1;
+}
+
+.section-title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.selecao {
+    font-size: 10px;
+}
+
+.section-title span {
+    color: #05a3ad;
+}
+
+#sobre-loja,
+#contato,
+select {
+    background-color: #d6fcff;
+}
+
+.text-colored,
+select {
+    color: #05a3ad;
+}
+
+.nav-produtos .nav-link.active {
+    background-color: #05a3ad;
+    color: #fff;
+}
+
+.nav-produtos .nav-link:hover {
+    color: #05a3ad;
+}
+
+.social-link li {
+    list-style: none;
+    display: inline;
+}
+
+.social-link a {
+    text-decoration: none;
+}
+
+form textarea {
+    resize: none;
+}
+
+.btn {
+    background-color: #05a3ad;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #1fb9c4;
+    color: #fff;
+}
+
+label.error{
+    color:rgb(255, 0, 0);
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 12;
+    font-style: italic;
+}
+
+@media (max-width: 640px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .duas-colunas img {
+        grid-template-columns: repeat(2, 49%);
+    }
+}

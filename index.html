@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geek 2.0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">GEEK BR</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-bag-check me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Entre em contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-loja">
+            <div class="carousel carousel-fade slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img class="d-block w-100" src="./imagens/slides/slide1.png" alt="anime one piece">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img class="d-block w-100" src="./imagens/slides/slide2.png" alt="anime demon slayer">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img class="d-block w-100" src="./imagens/slides/slide3.png" alt="anime attack on titan">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./imagens/loja.png" class="d-block w-100 rounded" alt="foto interna da loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title fs-4">Sobre <span class="text-colored">a loja</span></h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi atque exercitationem fugiat aperiam, asperiores sit sint numquam molestias iusto. Pariatur repellendus quasi quam.
+                            </p>
+                            <h3 class="section-title fs-4">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae enim voluptate atque. Voluptatum ab aut, neque magnam dolores, modi pariatur facere alias magni laboriosam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fs-4 mb-5">
+                        <span class="text-colored">Produtos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2 section-title selecao">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#roupas" class="text-start nav-link text-colored active">Roupas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#action-figures" class="text-start nav-link text-colored">Action Figures</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="text-start nav-link text-colored">Acessórios</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mangas" class="text-start nav-link text-colored">Mangas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="roupas">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/roupas/deku.png" alt="camisa do midoriya do anime boku no hero">
+                                        <h5 class="text-colored fw-bold mt-2">Camiseta do Deku - Boku no Hero</h5>
+                                        <div class="preço">
+                                            <strong>R$ 99,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/roupas/luffy.png" alt="camisa do luffy do anime one piece">
+                                        <h5 class="text-colored fw-bold mt-2">Camiseta do luffy - One Piece</h5>
+                                        <div class="preço">
+                                            <strong>R$ 99,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/roupas/naruto sasuke.png" alt="camisa do naruto e sasuke do anime naruto">
+                                        <h5 class="text-colored fw-bold mt-2">Camiseta do Naruto e Sasuke - Naruto</h5>
+                                        <div class="preço">
+                                            <strong>R$ 99,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/roupas/tanjiro.png" alt="camisa do tanjiro do anime demon slayer">
+                                        <h5 class="text-colored fw-bold mt-2">Camiseta do Tanjiro - Demon Slayer</h5>
+                                        <div class="preço">
+                                            <strong>R$ 99,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="action-figures">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/action figures/kakashi.png" alt="action figure do personagem kakashi do anime naruto">
+                                        <h5 class="text-colored fw-bold mt-2">Action Figure Kakashi</h5>
+                                        <p>Altura 22cv - Material PVC</p>
+                                        <div class="preço">
+                                            <strong>R$ 110,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/action figures/levi.png" alt="action figure do personagem levi do anime attack on titan">
+                                        <h5 class="text-colored fw-bold mt-2">Action Figure Levi Ackerman</h5>
+                                        <p>Altura 20cm - Material PVC</p>
+                                        <div class="preço">
+                                            <strong>R$ 119,99</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/action figures/rengoku.png" alt="action figure do personagem rengoku do anime demon slayer">
+                                        <h5 class="text-colored fw-bold mt-2">Action Figure Rengoku</h5>
+                                        <p>Altura 22cm - Material PVC</p>
+                                        <div class="preço">
+                                            <strong>R$ 145,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/action figures/zoro.png" alt="action figure do personagem zoro do anime one piece">
+                                        <h5 class="text-colored fw-bold mt-2">Action Figure Roronoa Zoro</h5>
+                                        <p>Altura 25cm - Material PVC</p>
+                                        <div class="preço">
+                                            <strong>R$ 129,90</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/acessorios/aneis.png" alt="camisa do midoriya do anime boku no hero">
+                                        <h5 class="text-colored fw-bold mt-2">Kit 10 Aneis Akatsuki - Naruto</h5>
+                                        <div class="preço">
+                                            <strong>R$ 99,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/acessorios/brinco.png" alt="camisa do luffy do anime one piece">
+                                        <h5 class="text-colored fw-bold mt-2">Brincos do Tanjiro - Demon Slayer</h5>
+                                        <div class="preço">
+                                            <strong>R$ 10,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/acessorios/chaveiro.png" alt="camisa do naruto e sasuke do anime naruto">
+                                        <h5 class="text-colored fw-bold mt-2">Chaveiro do Asta - Black Clover</h5>
+                                        <div class="preço">
+                                            <strong>R$ 20,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/acessorios/colar.png" alt="camisa do tanjiro do anime demon slayer">
+                                        <h5 class="text-colored fw-bold mt-2">Colar Asas de Liberdade - Attack on Titan</h5>
+                                        <div class="preço">
+                                            <strong>R$ 15,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="mangas">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/mangas/attack o titan.png" alt="manga attack on titan">
+                                        <h5 class="text-colored fw-bold mt-2">Manga Attack on Titan</h5>
+                                        <p>
+                                            Volume
+                                            <select class="volumes">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                            </select>
+                                        </p>
+                                        <div class="preço">
+                                            <strong>R$ 25,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/mangas/boku no hero.png" alt="manga boku no hero">
+                                        <h5 class="text-colored fw-bold mt-2">Manga Boku no Hero</h5>
+                                        <p>
+                                            Volume 
+                                            <select class="volumes">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                            </select>
+                                        </p>
+                                        <div class="preço">
+                                            <strong>R$ 25,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/mangas/naruro.png" alt="manga naruto">
+                                        <h5 class="text-colored fw-bold mt-2">Manga Naruto</h5>
+                                        <p>
+                                            Volume
+                                            <select class="volumes">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                            </select>
+                                        </p>
+                                        <div class="preço">
+                                            <strong>R$ 25,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                    <div class="col-md-3 col-md-6 col-lg-3">
+                                        <img class="d-block w-100" src="./imagens/mangas/one piece.png" alt="manga one piece">
+                                        <h5 class="text-colored fw-bold mt-2">Manga One Piece</h5>
+                                        <p>
+                                            Volume
+                                            <select class="volumes">
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                                <option>05</option>
+                                                <option>06</option>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                                <option>10</option>
+                                            </select>
+                                        </p>
+                                        <div class="preço">
+                                            <strong>R$ 25,00</strong>
+                                        </div>
+                                        <button type="button" class="btn" class="btn" data-bs-toggle="modal" data-bs-target="#exemplo-modal">Adcionar ao Carrinho</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Produto fora de estoque</h5>
+                        <button data-bs-dismiss="modal" type="button" class="btn btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            O produto selecionado se encontra fora de estoque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fs-4">
+                        Fale <span class="text-colored">conosco</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label  for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                                <input type="email" name="email" id="email" class="form-control"required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored" fw-bold text-colored>Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" name="mensagem" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 mt-4">
+                        <div class="row">
+                            <h3 class="section-title fs-5 text-colored">
+                                Redes sociais
+                            </h3>
+                            <ul class="social-link mt-1">
+                                <li class="fs-5">
+                                    <a href="https://facebook.com">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="https://instagram.com">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://whatsapp.com">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-5 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua dos Alfeneiros, nº 4, Privet Drive - São Paulo/SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="rodape">
+        <div class="container">
+            <div class="section-title selecao pt-4 pb-1 text-center">
+            <p>
+                2023 &copy; Geek BR - Todos os direitos reservados
+            </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#telefone').mask('(00) 00000-0000',{
+            })
+
+            $('form').validate({
+                    rules:{
+                    nome: {
+                    required: true
+                    },
+                    email: {
+                    required: true,
+                    email: true
+                    },
+                    mensagem: {
+                        required: true,
+                    }
+                },
+                messages:{
+                    nome: 'Por favor, insira seu nome',
+                    email: 'Por favor, insira seu e-mail',
+                    mensagem: 'Por favor, insira sua mensagem',
+        },
+            })
+        })
+    </script>
+</body>
+</html>
